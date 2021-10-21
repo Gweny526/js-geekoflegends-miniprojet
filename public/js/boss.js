@@ -6,10 +6,11 @@ export default class Boss{
         this.pa = pa
     }
     enigme = () => {
-        if ( this.pv == 100){
+        if ( this.pv == 100 && enigme1 == reponse){
             let enigme1 = prompt("je peux être d'eau, d'air ou d'électricité qui suis-je?")
-            let reponse = "moulin"
+            let reponse = "courant"
             return reponse
+            console.log(`tu as réussi`);
         } 
             
         }

@@ -77,3 +77,42 @@ console.log(`c'est au tour de ${boss3.nom} d'attaquer, elle décide d'attaquer $
 
 // la guerrière subit des dégat 
 console.log(`${guerrier1.nom} encaisse le coup, il lui reste plus que ${guerrier1.pv - boss3.pa} de pv` );
+
+
+// deuxième tour
+// l'archer attaque
+archer1.attaque()
+console.log(`${archer1.nom} attaque ${boss3.nom} et lui inflige ${archer1.pa} point de dégat mais l'archer se blesse en attaquant il lui reste ${archer1.pv} de pv`);
+
+// fin de tour de l'archer
+console.log(`${archer1.nom} perd 2 fleche il lui en reste donc plus que  ${archer1.fleche - 2} `);
+
+// la boss subit l'attaque de l'archer
+console.log(`il reste ${boss3.pv - archer1.pa} de pv à Lilith`);
+
+guerrier1.attaque()
+console.log(`${guerrier1.nom} attaque ${boss3.nom} et lui inflige ${guerrier1.pa} point de dégat mais la guerière se blesse en attaquant il lui reste donc plus que ${guerrier1.pv} de pv`);
+
+// fin de tour pour la guerrière
+console.log(`${guerrier1.nom}, maintenant que son tour est fini gagne ${guerrier1.pr + 1} point de rage`);
+
+// la boss subit l'attaque de la guerrière
+console.log(`${boss3.nom} encaisse le coup sans bronchée mais il lui reste plus que ${boss3.pv - guerrier1.pa} de pv `);
+
+// la mage attaque 
+mage1.attaque()
+console.log(`${mage1.nom} attaque ${boss3.nom} et lui inflige ${mage1.pa} point de dégat mais la guerière se blesse en attaquant il lui reste donc plus que ${mage1.pv} de pv`);
+
+// la fin de tour de la mage
+console.log(`le tour de ${mage1.nom} est terminé et perd 2 point de mana et lui reste donc ${mage1.pm - 2} de point de mana `);
+
+// la boss subit l'attaque de la mage
+console.log(`${boss3.nom} encaisse le coup avec un légé sourire il lui reste plus que ${boss3.pv - mage1.pa} de pv` );
+
+// le boss attaque
+
+console.log(`c'est au tour de ${boss3.nom} d'attaquer, elle décide d'attaquer ${guerrier1.nom} et lui inflige ${boss3.pa} de point de dégat`);
+
+// la guerrière subit des dégat 
+console.log(`${archer1.nom} encaisse le coup, il lui reste plus que ${archer1.pv - boss3.pa} de pv` );
+
