@@ -5,9 +5,9 @@ import Guerrier from './guerrier.js'
 import Mage from './mage.js'
 
 // boss
-let boss1 = new Boss("Sauron", 500, 50)
-let boss2 = new Boss("Chronos", 500, 50)
-let boss3 = new Boss ("Lilith", 500, 55)
+let boss1 = new Boss("Sauron", 350, 50)
+let boss2 = new Boss("Chronos", 350, 50)
+let boss3 = new Boss ("Lilith", 350, 55)
 
 console.log(boss1);
 console.log(boss2);
